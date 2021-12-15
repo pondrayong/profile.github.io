@@ -1,7 +1,582 @@
-<html>
-<head>
-</head>
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Prachya Singket</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome_b.css">
+    <link rel="stylesheet" href="assets/css/templatemo-digimedia-v3.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+<!--
+
+TemplateMo 568 DigiMedia
+
+https://templatemo.com/tm-568-digimedia
+	
+-->
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+	google.charts.load('current', {packages: ['corechart', 'bar']});
+google.charts.setOnLoadCallback(drawAxisTickColors);
+
+function drawAxisTickColors() {
+     var data = google.visualization.arrayToDataTable([
+         ['Task', 'Percent', { role: 'style' }],
+		 ['Analysis', 25, '#04005f'],
+         ['DataVisual', 25, 'color: #172b8e' ], // CSS-style declaration
+         ['Coding', 20, '#821a65'],            // RGB value
+         ['IIoT', 20, '#906060'],            // English color name
+         ['Project', 10, 'color: #9c8058' ], // CSS-style declaration
+      ]);
+
+      var options = {
+		legend: 'none',
+        chartArea: {width: '75%'},
+
+		hAxis: {
+          ticks: [0, 5, 10, 15, 20, 25]
+        }
+      };
+      var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+    }
+    </script>
+  </head>
+
 <body>
-Hello world.
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- Pre-header Starts -->
+  <div class="pre-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-sm-8 col-7">
+          <ul class="info">
+            <li><a href="#"><i class="fa fa-envelope"></i>prachya.singket@gmail.com</a></li>
+            <li><a href="#"><i class="fa fa-phone"></i>(+66)89-831-4582</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-sm-4 col-5">
+          <ul class="social-media">
+            <li><a href="https://www.facebook.com/Sahai.Rangsan/" target=”_blank”><i class="fa fa-facebook"></i></a></li>
+           <!--<li><a href="http://line.me/ti/p/~pond_ca"><i class="fa fa-line"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>-->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Pre-header End -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <img src="assets/images/Everything_is_possible.png" alt=""  height="80">
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+              <li class="scroll-to-section"><a href="#introduction">Introduction</a></li>
+              <li class="scroll-to-section"><a href="#skill">Skill</a></li>
+              <li class="scroll-to-section"><a href="#portfolio">Projects</a></li>
+              <li class="scroll-to-section"></li>
+            </ul>        
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-6 align-self-center">
+              <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                <div class="row">
+                  <div class="col-lg-12">
+					<h4>Hi, I am <em>Pond</em></h4>
+                    
+                    <h2>MR.PRACHYA SINGKET</h2>
+                    <p>System Analysis <br>UBE Chemicals (Asia) Public Company Limited</p>
+                  </div>
+                  <div class="col-lg-12">
+                   <!-- <div class="border-first-button scroll-to-section">
+                      <a href="#contact">Free Quote</a>
+                    </div>-->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                <img src="assets/images/Capture_2.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="introduction" class="about section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="about-left-image  wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                <img src="assets/images/system_2.png" alt="">
+              </div>
+            </div>
+            <div class="col-lg-6 align-self-center  wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+              <div class="about-right-content">
+                <div class="section-heading">
+                  <h6>Prosonal information</h6>
+                  <div class="line-dec"></div>
+                </div>
+                <p>
+				Gender:Male 
+				<br>Age:34 
+				<br>Date of Birth:10 February 1987
+				<br>Place of Birth:Rayong
+				<br>Height:172 cm
+				<br>Weight:89 kg
+				<br>Nationality:Thai
+				<br>Religion:Buddhism
+				<br>Military Status:Completed
+				<br>Marital Status:Married
+
+
+				</p>
+               <!-- <div class="row">
+                  <div class="col-lg-4 col-sm-4">
+                    <div class="skill-item first-skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
+                      <div class="progress" data-percentage="25">
+                        <span class="progress-left">
+                          <span class="progress-bar"></span>
+                        </span>
+                        <span class="progress-right">
+                          <span class="progress-bar"></span>
+                        </span>
+                        <div class="progress-value">
+                          <div>
+                            25%<br>
+                            <span>Coding</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-4">
+                    <div class="skill-item second-skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
+                      <div class="progress" data-percentage="30">
+                        <span class="progress-left">
+                          <span class="progress-bar"></span>
+                        </span>
+                        <span class="progress-right">
+                          <span class="progress-bar"></span>
+                        </span>
+                        <div class="progress-value">
+                          <div>
+                            30%<br>
+                            <span>Analyst</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-4">
+                    <div class="skill-item third-skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
+                      <div class="progress" data-percentage="20">
+                        <span class="progress-left">
+                          <span class="progress-bar"></span>
+                        </span>
+                        <span class="progress-right">
+                          <span class="progress-bar"></span>
+                        </span>
+                        <div class="progress-value">
+                          <div>
+                            20%<br>
+                            <span>Database</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+				  <div class="col-lg-4 col-sm-4">
+                    <div class="skill-item third-skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
+                      <div class="progress" data-percentage="25">
+                        <span class="progress-left">
+                          <span class="progress-bar"></span>
+                        </span>
+                        <span class="progress-right">
+                          <span class="progress-bar"></span>
+                        </span>
+                        <div class="progress-value">
+                          <div>
+                            25%<br>
+                            <span>IoT</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+				<div class="row">
+				 <div class="col-lg-4 col-sm-4">
+				  <div id="chart_div" style="width: 500px; height: 200px;"></div>
+				 </div>
+				</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="skill" class="services section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+            <h6>Skill</h6>
+            <h4>Our <em>Power</em></h4>
+            <div class="line-dec"></div>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="naccs">
+            <div class="grid">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="menu">
+                    <div class="first-thumb active">
+                      <div class="thumb">
+                        <span class="icon"><img src="assets/images/coding.png" alt=""></span>
+                        Coding<br><p style="opacity:0;">/r/n</p>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">                 
+                        <span class="icon"><img src="assets/images/system_analysis.png" alt=""></span>
+                        System Analysis
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">                 
+                        <span class="icon"><img src="assets/images/data.png" alt=""></span>
+                         Data Visualization
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">                 
+                        <span class="icon"><img src="assets/images/iot_2.png" alt=""></span>
+                        IIoT<br><p style="opacity:0;">/r/n</p>
+                      </div>
+                    </div>
+                    <div class="last-thumb">
+                      <div class="thumb">                 
+                        <span class="icon"><img src="assets/images/project.png" alt=""></span>
+                        Project management
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                <div class="col-lg-12">
+                  <ul class="nacc">
+                    <li class="active">
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-6 align-self-center">
+                              <div class="left-text">
+                                <h4>Coding</h4>
+                                <p>Develop on web application and API interface data</p>
+                                <div class="ticks-list"><span><i class="fa fa-check"></i> PHP,HTML,CSS</span> <span><i class="fa fa-check"></i> Java</span> <span><i class="fa fa-check"></i> SQL</span>
+                                  <span><i class="fa fa-check"></i> C,C++</span> <span><i class="fa fa-check"></i> Python</span> </div>
+                                <!--<p>API interface data</p>-->
+                              </div>
+                            </div>
+                            <div class="col-lg-6 align-self-center">
+                              <div class="right-image">
+                                <img src="assets/images/system_1.png" alt="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-6 align-self-center">
+                              <div class="left-text">
+                                <h4>System Analysis</h4>
+                                <p>System flow system and design UX/UI on environment</p>
+                                <div class="ticks-list"><span><i class="fa fa-check"></i> ERP</span> <span><i class="fa fa-check"></i> MES</span> <span><i class="fa fa-check"></i> Flow diagram</span>
+                                  <span><i class="fa fa-check"></i> Database management</span> <span><i class="fa fa-check"></i> Web server</span></div>
+                                <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor incididunt.</p>-->
+                              </div>
+                            </div>
+                            <div class="col-lg-6 align-self-center">
+                              <div class="right-image">
+                                <img src="assets/images/services-image-04.jpg" alt="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-6 align-self-center">
+                              <div class="left-text">
+                                <h4>Data visualization</h4>
+                                <p>Create dataset and join data on concept ETL (Extract Tranform Load) and get data parameter DCS by PHD</p>
+                                <div class="ticks-list"><span><i class="fa fa-check"></i> SSIS,SSAS,SSRS</span> <span><i class="fa fa-check"></i> PowerBI</span> <span><i class="fa fa-check"></i> Tableau</span>
+                                  <span><i class="fa fa-check"></i> Google chart</span> <span><i class="fa fa-check"></i> Google chart</span><span><i class="fa fa-check"></i> Data interface</span></div>
+                                
+                              </div>
+                            </div>
+                            <div class="col-lg-6 align-self-center">
+                              <div class="right-image">
+                                <img src="assets/images/data_2.png" alt="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-6 align-self-center">
+                              <div class="left-text">
+                                <h4>IIoT</h4>
+                                <p>Use technology IIoT in Production activity(motion,light,sound,environment) and alram abnormal by Line notification</p>
+                                <div class="ticks-list"><span><i class="fa fa-check"></i> Sensor</span> <span><i class="fa fa-check"></i> Arduino</span> <span><i class="fa fa-check"></i> Raspberry PI</span>
+                                  <span><i class="fa fa-check"></i> Board Control</span> <span><i class="fa fa-check"></i> Interface system</span></div>
+                                
+                              </div>
+                            </div>
+                            <div class="col-lg-6 align-self-center">
+                              <div class="right-image">
+                                <img src="assets/images/IoT_3.png" alt="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-6 align-self-center">
+                              <div class="left-text">
+                                <h4>Project management</h4>
+                                <p>Control project on plan and on target to high effectiveness</p>
+                                <div class="ticks-list"><span><i class="fa fa-check"></i> Control plan</span> <span><i class="fa fa-check"></i> Control cost</span> <span><i class="fa fa-check"></i> Change management</span>
+                                  <span><i class="fa fa-check"></i> Risk management</span> <span><i class="fa fa-check"></i> Possibility</span><span><i class="fa fa-check"></i> Avoid libel lost </span></div>
+                              </div>
+                            </div>
+                            <div class="col-lg-6 align-self-center">
+                              <div class="right-image">
+                                <img src="assets/images/project_2.png" alt="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>          
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="portfolio" class="our-portfolio section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5">
+          <div class="section-heading wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+            <h6>Our Project</h6>
+            <h4>See Our Recent <em>Projects</em></h4>
+            <div class="line-dec"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="loop owl-carousel">
+            <div class="item">
+              <a href="#">
+                <div class="portfolio-item">
+                <div class="thumb">
+                  <img src="assets/images/production.png" alt="">
+                </div>
+                <div class="down-content">
+                  <h4>Production Data Warehouse</h4>
+                  <span>Production</span>
+                </div>
+              </div>
+              </a>  
+            </div>
+            <div class="item">
+              <a href="#">
+                <div class="portfolio-item">
+                <div class="thumb">
+                  <img src="assets/images/Shift.png" alt="">
+                </div>
+                <div class="down-content">
+                  <h4>Shift handover system</h4>
+                  <span>Production</span>
+                </div>
+              </div>
+              </a>  
+            </div>
+            <div class="item">
+              <a href="#">
+                <div class="portfolio-item">
+                <div class="thumb">
+                  <img src="assets/images/delivery.png" alt="">
+                </div>
+                <div class="down-content">
+                  <h4>Online delivery</h4>
+                  <span>Warehouse</span>
+                </div>
+              </div>
+              </a>  
+            </div>
+			<div class="item">
+              <a href="#">
+                <div class="portfolio-item">
+                <div class="thumb">
+                  <img src="assets/images/wb.png" alt="">
+                </div>
+                <div class="down-content">
+                  <h4>Weighbridge system</h4>
+                  <span>Warehouse</span>
+                </div>
+              </div>
+              </a>  
+            </div>
+            <div class="item">
+              <a href="#">
+                <div class="portfolio-item">
+                <div class="thumb">
+                  <img src="assets/images/safety_door.png" alt="">
+                </div>
+                <div class="down-content">
+                  <h4>Alerm Safety Door</h4>
+                  <span>Safety</span>
+                </div>
+              </div>
+              </a>  
+            </div>
+            <div class="item">
+              <a href="#">
+                <div class="portfolio-item">
+                <div class="thumb">
+                  <img src="assets/images/security.png" alt="">
+                </div>
+                <div class="down-content">
+                  <h4>Access control system</h4>
+                  <span>Safety</span>
+                </div>
+              </div>
+              </a>  
+            </div>
+			 <div class="item">
+              <a href="#">
+                <div class="portfolio-item">
+                <div class="thumb">
+                  <img src="assets/images/object_detection.png" alt="">
+                </div>
+                <div class="down-content">
+                  <h4>Fire Preventive</h4>
+                  <span>Safety</span>
+                </div>
+              </div>
+              </a>  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © 2022 Prachya Singket All Rights Reserved. 
+          <br>Design: <a href="https://www.facebook.com/Sahai.Rangsan/" target="_parent" title="Hello">PondCA</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/custom.js"></script>
+
 </body>
 </html>
