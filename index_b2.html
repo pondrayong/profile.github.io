@@ -21,14 +21,6 @@
     <link rel="stylesheet" href="assets/css/templatemo-digimedia-v3.css">
     <link rel="stylesheet" href="assets/css/animated.css">
     <link rel="stylesheet" href="assets/css/owl.css">
-
-    <style>
-     .skills.active{
-      box-shadow: 2px 2px 15px rgba(0,0,0,0.1);
-      background-color: #4DA6E7 !important;
-      color:white !important;
-     }
-    </style>
 <!--
 
 TemplateMo 568 DigiMedia
@@ -298,41 +290,51 @@ function drawAxisTickColors() {
             <div class="grid">
               <div class="row">
                 <div class="col-lg-12">
-                  <div class=" row" style="margin-top:20px;marin-bottom:30px;">
-                    <div class="col first-thumb active skills" idel="1" style="background-color:#FFFFFF;border-radius:10px;padding:10px;text-align:center;margin:5px;cursor: pointer;">
-                        <img class="imgSkill" src="https://ugtwebportal.ube.co.th/upload_m/coding.png" alt="" style="width:80px;"><br>
-                        <span class="imgSkill">Coding</span>
-                    
+                  <div class="menu">
+				
+				  
+                    <div class="first-thumb active">
+                      <div class="thumb">
+                        <span class="icon"><img src="https://ugtwebportal.ube.co.th/upload_m/coding.png" alt=""></span>
+                        Coding<br><p style="opacity:0;">/r/n</p>
+                      </div>
                     </div>
-                    <div class="col skills" idel="2" style="background-color:#FFFFFF;border-radius:10px;padding:10px;text-align:center;margin:5px;cursor: pointer;">
-                        <img class="imgSkill" src="https://ugtwebportal.ube.co.th/upload_m/system_analysis.png" alt="" style="width:80px;">
-                        <br>
-                    <span class="imgSkill">System Analysis</span>
-                    
+					
+					
+                    <div>
+                      <div class="thumb">                 
+                        <span class="icon"><img src="https://ugtwebportal.ube.co.th/upload_m/system_analysis.png" alt=""></span>
+                        System Analysis
+                      </div>
                     </div>
-                    <div class="col skills" idel="3" style="background-color:#FFFFFF;border-radius:10px;padding:10px;text-align:center;margin:5px;cursor: pointer;">
-                        <img class="imgSkill" src="https://ugtwebportal.ube.co.th/upload_m/data.png" alt="" style="width:80px;">
-                        <br>
-                    <span class="imgSkill">Data Visualization</span>
-                    
+					
+                    <div>
+                      <div class="thumb">                 
+                        <span class="icon"><img src="https://ugtwebportal.ube.co.th/upload_m/data.png" alt=""></span>
+                         Data Visualization
+                      </div>
                     </div>
-                    <div class="col skills" idel="4" style="background-color:#FFFFFF;border-radius:10px;padding:10px;text-align:center;margin:5px;cursor: pointer;">
-                        <img class="imgSkill" src="https://ugtwebportal.ube.co.th/upload_m/iot_2.png" alt="" style="width:80px;">
-                        <br>
-                    <span class="imgSkill">IIoT</span>
-                    
+					
+                    <div>
+                      <div class="thumb">                 
+                        <span class="icon"><img src="https://ugtwebportal.ube.co.th/upload_m/iot_2.png" alt=""></span>
+                        IIoT<br><p style="opacity:0;">/r/n</p>
+                      </div>
                     </div>
-                    <div class="col last-thumb skills" idel="5" style="background-color:#FFFFFF;border-radius:10px;padding:10px;text-align:center;margin:5px;cursor: pointer;">
-                        <img class="imgSkill" src="https://ugtwebportal.ube.co.th/upload_m/project.png" alt="" style="width:80px;">
-                        <br>
-                    <span class="imgSkill">Project Management</span>
-                    
+					
+                    <div class="last-thumb">
+                      <div class="thumb">                 
+                        <span class="icon"><img src="https://ugtwebportal.ube.co.th/upload_m/project.png" alt=""></span>
+                        Project management
+                      </div>
                     </div>
-                    </div>
+					
+			
+                  </div>
                 </div> 
                 <div class="col-lg-12">
                   <ul class="nacc">
-                    <li class="active contentSkill" id="c1">
+                    <li class="active">
                       <div>
                         <div class="thumb">
                           <div class="row">
@@ -354,7 +356,7 @@ function drawAxisTickColors() {
                         </div>
                       </div>
                     </li>
-                    <li class=" contentSkill" id="c2">
+                    <li>
                       <div>
                         <div class="thumb">
                           <div class="row">
@@ -376,7 +378,7 @@ function drawAxisTickColors() {
                         </div>
                       </div>
                     </li>
-                    <li class=" contentSkill" id="c3">
+                    <li>
                       <div>
                         <div class="thumb">
                           <div class="row">
@@ -398,7 +400,7 @@ function drawAxisTickColors() {
                         </div>
                       </div>
                     </li>
-                    <li class=" contentSkill" id="c4">
+                    <li>
                       <div>
                         <div class="thumb">
                           <div class="row">
@@ -420,7 +422,7 @@ function drawAxisTickColors() {
                         </div>
                       </div>
                     </li>
-                    <li class=" contentSkill" id="c5">
+                    <li>
                       <div>
                         <div class="thumb">
                           <div class="row">
@@ -583,26 +585,6 @@ function drawAxisTickColors() {
   <script src="assets/js/animation.js"></script>
   <script src="assets/js/imagesloaded.js"></script>
   <script src="assets/js/custom.js"></script>
-  <script>
-    const skillsEl = document.querySelectorAll(".skills");
-    skillsEl.forEach(el => {
-      el.addEventListener('click',function(e){
-        document.querySelectorAll('.contentSkill').forEach(c => c.classList.remove('active'));
-        document.querySelectorAll('.skills').forEach(c => c.classList.remove('active'));
-        if(e.target.classList.contains('skills')){
-          document.getElementById(`c${e.target.getAttribute('idel')}`).classList.add('active');
-          e.target.classList.add('active');
-        }else{
-          const skel = e.target.closest('.skills').getAttribute('idel');
-          const skElc = e.target.closest('.skills');
-          document.getElementById(`c${skel}`).classList.add('active');
-          skElc.classList.add('active');
-        }
-       
-      });
-    });
 
-    
-  </script>
 </body>
 </html>
