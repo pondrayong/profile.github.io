@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>Prachya Singket</title>
+    <title>Prachya Singket V.240718</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -43,12 +43,12 @@ google.charts.setOnLoadCallback(drawAxisTickColors);
 
 function drawAxisTickColors() {
      var data = google.visualization.arrayToDataTable([
-         ['Task', 'Percent', { role: 'style' }],
-		 ['Analysis', 25, '#04005f'],
-         ['DataVisual', 25, 'color: #172b8e' ], // CSS-style declaration
-         ['Coding', 20, '#821a65'],            // RGB value
-         ['IIoT', 20, '#906060'],            // English color name
-         ['Project', 10, 'color: #9c8058' ], // CSS-style declaration
+        ['Task', 'Percent', { role: 'style' }],
+		    ['Project', 25, 'color: #04005f'],
+        ['Analysis', 25, 'color: #172b8e' ], // CSS-style declaration
+        ['IoT', 20, 'color:#821a65'],            // RGB value
+        ['Coding', 20, 'color:#906060'],            // English color name
+        ['DataVisual', 10, 'color: #9c8058' ], // CSS-style declaration
       ]);
 
       var options = {
